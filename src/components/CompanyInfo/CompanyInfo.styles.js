@@ -4,6 +4,7 @@ export const Container = styled.div`
     display: flex; 
     flex-direction: row; 
     justify-content: left;  
+    margin-bottom: 20px; 
 `
 
 export const StyledImage = styled.img`

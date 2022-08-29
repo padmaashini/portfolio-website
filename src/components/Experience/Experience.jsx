@@ -1,32 +1,19 @@
 import React from 'react';
 
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import DescriptionIcon from '@mui/icons-material/Description';
-
 import { 
-    Container, 
+    ExperienceContainer, 
     Title,
-    ImageContainer,
-    NameAndLinksContainer,
-    StyledImage,
-    IconLink,
-    IconsContainer,
-    StyledLine
 } from './Experience.styles';
 import CompanyInfo from '../CompanyInfo/CompanyInfo';
 
+import { data } from './ExperienceData';
+
 const Introduction = () => {
     return (
-        <Container>
-            <div>
-                <Title>Experience</Title>
-                <CompanyInfo />
-            </div>
-            {/* <ImageContainer>
-                <StyledImage src='/image-slider-1.jpg' />
-            </ImageContainer> */}
-        </Container>
+        <ExperienceContainer>
+            <Title>Experience</Title>
+            {data.map(company => <CompanyInfo key={company.name} company={company}/>)}
+        </ExperienceContainer>
     )
 };
 

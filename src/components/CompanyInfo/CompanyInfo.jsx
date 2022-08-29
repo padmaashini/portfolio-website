@@ -8,29 +8,27 @@ import {
     Text 
 } from './CompanyInfo.styles'
 
-const CompanyInfo = () => {
+const CompanyInfo = ({ company }) => {
+    const { position, name, image, location, points } = company; 
 
     return (
         <Container>
-            <StyledImage src="/rb-logo2.jpeg" />
+            <div style={{marginRight: "5%"}}>
+                <StyledImage src={image} />
+            </div>
             <InfoContainer>
                 <CompanyName>
-                    Remitbee
+                    {name}
                 </CompanyName>
-                <Text><i>Mississuage, Ontario</i></Text>
+                <Text><i>{location}</i></Text>
                 <ul style={{listStyleType: 'circle', textAlign: 'left', paddingLeft: '20px'}}>
-                    <li>
-                        <Text>
-                        Developed REST endpoints in Python FastAPI microservices to allow customers to visualize data in 3D formats
-                        </Text>
-                    </li>
-                    <li>
-                        <Text>
-                        Developed new functions for splitting training-testing data across various microservices in the ML pipelin
-                        </Text>
-                    </li>
-                        
-                        
+                    {points.map(point => (
+                        <li key={point}>
+                            <Text>
+                                {point}
+                            </Text>
+                        </li>
+                    ))}      
                 </ul>
             </InfoContainer>
         </Container>
