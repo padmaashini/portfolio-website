@@ -1,38 +1,42 @@
 import React from 'react';
 
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import DescriptionIcon from '@mui/icons-material/Description';
-
 import { 
     Container, 
     Title,
     ImageContainer,
-    NameAndLinksContainer,
     StyledImage,
-    IconLink,
-    IconsContainer,
-    StyledLine
+    InfoContainer
 } from './AboutMe.styles';
 
-const Introduction = () => {
+import ImageSlider from '../ImageSlider/ImageSlider';
+
+const AboutMe = () => {
     return (
         <Container>
-            <div>
+            <InfoContainer>
                 <Title>About Me</Title>
-                <div style={{textAlign: 'left', marginRight: '5%'}}>
-                    Hi there! My name is Padma, I am a third year engineering student at the University of Waterloo. I am majoring in Biomedical Engineering with an 
-                    option in Software Engineering. I love problem solving and building products, especially in the software industry. 
+                <div>
+                    Hi there! My name is Padma, I am a third year engineering student at the University of Waterloo. 
+                    I am majoring in Biomedical Engineering with an option in Software Engineering. I have done various 
+                    co-ops as a software engineer, in the fintech, medical technology, and AI industry. I love problem 
+                    solving and building products, specifically in the software industry. I have grown a passion for 
+                    development through my internships and school courses, and planning on pursuing a full time career
+                    as a software engineer!
                     <br />
                     <br/>
-                    I love being in nature, going on walks, and reading! 
+                    I love being in nature and going on walks and hikes! I also love to read, feel free to connect and
+                    drop some recommendations :)
+                    <br />
+                    <br/>
+                    <b>Currently seeking internship opportunities for the Winter and Summer terms of 2023!</b>
                 </div>
-            </div>
+            </InfoContainer>
             <ImageContainer>
-                <StyledImage src='/image-slider-1.jpg' />
+                <ImageSlider />
+                {/* <StyledImage src='/image-slider-1.jpg' /> */}
             </ImageContainer>
         </Container>
     )
 };
 
-export default Introduction; 
+export default AboutMe; 
