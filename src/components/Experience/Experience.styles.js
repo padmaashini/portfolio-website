@@ -2,17 +2,18 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     // height: 600px; 
-    padding: 100px 10%; 
-    // background-color: #EBF1FF; 
-    background-color: #013C40; 
+    padding: 50px 10%; 
+    // background-color: #ECEDF4; 
+    background-color: #F9F8F7;
     display: flex; 
     flex-direction: row; 
     // padding: 0 10%; 
     // text-align: center; 
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center; 
-    @media screen and (min-width: 900px) {
-        padding: 100px 20%; 
+    // was 600
+    @media screen and (min-width: 1000px) {
+        padding: 50px 20%; 
     }
 `
 export const ImageContainer = styled.div`
@@ -20,7 +21,7 @@ export const ImageContainer = styled.div`
     // flex: 2; 
     // height: 100px; 
     // width: 100px; 
-    margin-right: 5%; 
+    // margin-right: 5%; 
     @media screen and (max-width: 600px) {
         display: none; 
     }
@@ -31,20 +32,19 @@ export const StyledImage = styled.img`
     // max-width: 500px;
     // max-width: 80%; 
     max-width: 215px; 
-    border-radius: 50%; 
+    border-radius: 10%; 
 `
 
 export const NameAndLinksContainer = styled.div`
     //centered when in mobile mode
     // flex: 3; 
-    
 `;
 
 export const Title = styled.h1`
     // padding-bottom: 30px;
-    font-size: 2rem; 
-    // color: #002060;
-    color: white;
+    // font-size: 2rem; 
+    // font-size: 3rem; 
+    text-align: left; 
 `
 export const IconLink = styled.a`
     &:link{
