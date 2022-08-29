@@ -35,5 +35,5 @@ export const StyledLine = styled.hr`
 `
 
 export const SubTitle = styled.h3`
-    color: white; 
+    color: #E9EBEC; 
 `

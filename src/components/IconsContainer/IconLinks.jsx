@@ -39,7 +39,7 @@ const IconLinks = () => {
                 href="https://github.com/padmaashini"
                 color="secondary"
             >
-                <img src="/github-32.png"/>
+                <img src="/github-logo.svg"/>
             </IconButton>
         </IconsContainer>
     )
