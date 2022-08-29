@@ -5,7 +5,9 @@ import {
     StyledImage, 
     InfoContainer, 
     CompanyName, 
-    Text 
+    Position,
+    Text,
+    Location
 } from './CompanyInfo.styles'
 
 const CompanyInfo = ({ company }) => {
@@ -17,11 +19,16 @@ const CompanyInfo = ({ company }) => {
                 <StyledImage src={image} />
             </div>
             <InfoContainer>
-                <CompanyName>
-                    {name}
-                </CompanyName>
-                <Text><i>{location}</i></Text>
-                <ul style={{listStyleType: 'circle', textAlign: 'left', paddingLeft: '20px'}}>
+                <span style={{marginBottom: '10px'}}>
+                    <Position>
+                        {`${position} | `}
+                    </Position>
+                    <CompanyName>
+                        {name}
+                    </CompanyName>
+                </span>
+                <Location><i>{location}</i></Location>
+                <ul style={{listStyleType: 'circle', textAlign: 'justify', paddingLeft: '20px'}}>
                     {points.map(point => (
                         <li key={point}>
                             <Text>

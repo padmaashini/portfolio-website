@@ -8,7 +8,7 @@ import CompanyInfo from '../CompanyInfo/CompanyInfo';
 
 import { data } from './ExperienceData';
 
-const Introduction = () => {
+const Experience = () => {
     return (
         <ExperienceContainer>
             <Title>Experience</Title>
@@ -17,4 +17,4 @@ const Introduction = () => {
     )
 };
 
-export default Introduction; 
+export default Experience; 

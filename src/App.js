@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import { ThemeProvider } from '@mui/material';
 
 import Introduction from './components/Introduction/Introduction';
-import AboutMe from './components/AboutMe/AboutMe'
-import Experience from './components/Experience/Experience'
+import AboutMe from './components/AboutMe/AboutMe';
+import Experience from './components/Experience/Experience';
+import Projects from './components/Projects/Projects';
 
 import { theme } from './theme'
 
@@ -20,6 +21,7 @@ function App() {
         <Introduction />
         <AboutMe />
         <Experience />
+        <Projects />
       </StyledApp>
     </ThemeProvider>
   );

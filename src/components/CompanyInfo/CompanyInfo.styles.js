@@ -23,10 +23,19 @@ export const InfoContainer = styled.div`
 `
 export const CompanyName = styled.h2`
     font-size: 20px; 
+    display: inline;
+    margin: 0px; 
+    color: #013C40;
+`
+export const Position = styled.h2`
+    font-size: 20px; 
+    display: inline; 
     margin: 0px; 
 `
-
+export const Location = styled.p`
+    margin-top: 5px; 
+`
 export const Text = styled.p`
-    // font-size: 14px; 
+    font-size: 15px; 
     margin: 0px; 
 `
