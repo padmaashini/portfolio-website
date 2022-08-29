@@ -8,15 +8,17 @@ import {
     StyledImage
 } from './ImageSlider.styles';
 
-const IMAGES = ['', '/image-slider-1.jpg', '/image-slider-2.jpeg', '/image-slider-3.jpg', '/image-slider-4.jpg', '/image-slider-3.jpg']
+const IMAGES = ['/image-slider-1.jpg', '/image-slider-2.jpeg', '/image-slider-3.jpg', '/image-slider-4.jpg', '/image-slider-3.jpg']
   
 const ImageSlider = () => {
     const [sliderIndex, setSliderIndex] = useState(1);
 
     useEffect(() => {
-        setInterval(() => {
+        const interval = setInterval(() => {
             incrementSliderIndex();
-        }, 5000)
+        }, 5000);
+        
+        return () => clearInterval(interval);
     }, [])
 
     const handleSliderIndexChange = (event, newValue) => {
@@ -31,13 +33,13 @@ const ImageSlider = () => {
 
     return (
         <ImageSliderContainer>
-            <StyledImage src={IMAGES[sliderIndex]} />
+            <StyledImage src={IMAGES[sliderIndex - 1]} />
             <Box sx={{ width: '300px' }}>
                 <Slider 
                     aria-label="image-slider"
                     valueLabelDisplay='auto'
                     value={sliderIndex}
-                    // onChange={handleSliderIndexChange}
+                    onChange={handleSliderIndexChange}
                     step={1}
                     marks
                     min={1}
