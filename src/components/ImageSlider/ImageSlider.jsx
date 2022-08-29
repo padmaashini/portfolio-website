@@ -8,7 +8,7 @@ import {
     StyledImage
 } from './ImageSlider.styles';
 
-const IMAGES = ['/image-slider-1.jpg', '/image-slider-2.jpeg', '/image-slider-3.jpg', '/image-slider-4.jpg', '/image-slider-3.jpg']
+const IMAGES = ['/image-slider-1.jpg', '/image-slider-2.jpeg', '/image-slider-3.jpg', '/image-slider-4.jpg', '/image-slider-5.jpg']
   
 const ImageSlider = () => {
     const [sliderIndex, setSliderIndex] = useState(1);
@@ -21,20 +21,18 @@ const ImageSlider = () => {
         return () => clearInterval(interval);
     }, [])
 
-    const handleSliderIndexChange = (event, newValue) => {
+    const handleSliderIndexChange = (event, newValue) => 
         setSliderIndex(newValue);
-    }
+    
 
-    const incrementSliderIndex = () => {
-        setSliderIndex((prevIndex) => {
-            return prevIndex === IMAGES.length ? 1 : prevIndex + 1;
-        }); 
-    }
+    const incrementSliderIndex = () => 
+        setSliderIndex((prevIndex) => prevIndex === IMAGES.length ? 1 : prevIndex + 1);
+    
 
     return (
         <ImageSliderContainer>
             <StyledImage src={IMAGES[sliderIndex - 1]} />
-            <Box sx={{ width: '300px' }}>
+            <Box sx={{ width: 300 }}>
                 <Slider 
                     aria-label="image-slider"
                     valueLabelDisplay='auto'

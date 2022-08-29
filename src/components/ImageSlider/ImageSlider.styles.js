@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const ImageSliderContainer = styled.div`
-    // border-radius: 10% 10% 0 0 ;
     overflow: hidden; 
     padding: 10px; 
+    text-align: center; 
 `
 export const StyledImage = styled.img`
     max-width: 300px; 

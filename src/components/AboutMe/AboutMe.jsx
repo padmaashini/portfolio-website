@@ -3,8 +3,8 @@ import React from 'react';
 import { 
     Container, 
     Title,
-    ImageContainer,
-    StyledImage,
+    ImageContainerLarge,
+    ImageContainerSmall,
     InfoContainer
 } from './AboutMe.styles';
 
@@ -15,6 +15,9 @@ const AboutMe = () => {
         <Container>
             <InfoContainer>
                 <Title>About Me</Title>
+                <ImageContainerSmall>
+                    <ImageSlider />
+                </ImageContainerSmall>
                 <div>
                     Hi there! My name is Padma, I am a third year engineering student at the University of Waterloo. 
                     I am majoring in Biomedical Engineering with an option in Software Engineering. I have done various 
@@ -31,10 +34,9 @@ const AboutMe = () => {
                     <b>Currently seeking internship opportunities for the Winter and Summer terms of 2023!</b>
                 </div>
             </InfoContainer>
-            <ImageContainer>
+            <ImageContainerLarge>
                 <ImageSlider />
-                {/* <StyledImage src='/image-slider-1.jpg' /> */}
-            </ImageContainer>
+            </ImageContainerLarge>
         </Container>
     )
 };

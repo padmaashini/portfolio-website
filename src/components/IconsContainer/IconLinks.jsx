@@ -39,7 +39,11 @@ const IconLinks = () => {
                 href="https://github.com/padmaashini"
                 color="secondary"
             >
-                <img src="/github-logo.svg"/>
+                <img 
+                    src="/github-logo.svg" 
+                    alt="GitHub"
+                    aria-label="github"
+                />
             </IconButton>
         </IconsContainer>
     )
