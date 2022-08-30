@@ -1,44 +1,42 @@
 import React from 'react';
 
 import { 
-    Container, 
+    CompanyInfoContainer, 
     StyledImage, 
     InfoContainer, 
+    ImageContainer,
     CompanyName, 
     Position,
-    Text,
-    Location
+    Point,
+    Location,
+    UnOrderedList
 } from './CompanyInfo.styles'
 
 const CompanyInfo = ({ company }) => {
     const { position, name, image, location, points } = company; 
 
     return (
-        <Container>
-            <div style={{marginRight: "5%"}}>
+        <CompanyInfoContainer>
+            <ImageContainer>
                 <StyledImage src={image} />
-            </div>
+            </ImageContainer>
             <InfoContainer>
-                <span style={{marginBottom: '10px'}}>
-                    <Position>
-                        {`${position} | `}
-                    </Position>
-                    <CompanyName>
-                        {name}
-                    </CompanyName>
-                </span>
-                <Location><i>{location}</i></Location>
-                <ul style={{listStyleType: 'circle', textAlign: 'justify', paddingLeft: '20px'}}>
-                    {points.map(point => (
-                        <li key={point}>
-                            <Text>
-                                {point}
-                            </Text>
-                        </li>
+                <Position>
+                    {`${position} | `}
+                </Position>
+                <CompanyName>
+                    {name}
+                </CompanyName>
+                <Location>{location}</Location>
+                <UnOrderedList>
+                    {points.map((point, index) => (
+                        <Point key={index}>
+                            {point}
+                        </Point>
                     ))}      
-                </ul>
+                </UnOrderedList>
             </InfoContainer>
-        </Container>
+        </CompanyInfoContainer>
     )
 }
 

@@ -10,4 +10,7 @@ export const ExperienceContainer = styled.div`
 
 export const Title = styled.h1`
     text-align: left; 
+    @media screen and (max-width: 800px) {
+        text-align: center; 
+    }
 `;
