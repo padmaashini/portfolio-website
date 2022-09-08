@@ -1,16 +1,19 @@
 import React from 'react';
 
+import ProjectsTable from '../ProjectsTable/ProjectsTable';
+
 import {
-    ProjectsContainer,
-    Title
+  ProjectsContainer,
+  Title,
 } from './Projects.styles';
 
-const Projects = () => {
-    return (
-        <ProjectsContainer>
-            <Title>Projects</Title>
-        </ProjectsContainer>
-    )
-};
+function Projects() {
+  return (
+    <ProjectsContainer>
+      <Title>Projects</Title>
+      <ProjectsTable />
+    </ProjectsContainer>
+  );
+}
 
-export default Projects; 
+export default Projects;

@@ -1,20 +1,20 @@
 import React from 'react';
 
-import { 
-    ExperienceContainer, 
-    Title,
+import {
+  ExperienceContainer,
+  Title,
 } from './Experience.styles';
 import CompanyInfo from '../CompanyInfo/CompanyInfo';
 
-import { data } from './ExperienceData';
+import data from './ExperienceData';
 
-const Experience = () => {
-    return (
-        <ExperienceContainer>
-            <Title>Experience</Title>
-            {data.map(company => <CompanyInfo key={company.name} company={company}/>)}
-        </ExperienceContainer>
-    )
-};
+function Experience() {
+  return (
+    <ExperienceContainer>
+      <Title>Experience</Title>
+      {data.map((company) => <CompanyInfo key={company.name} company={company} />)}
+    </ExperienceContainer>
+  );
+}
 
-export default Experience; 
+export default Experience;
