@@ -28,7 +28,7 @@ function IconLinks() {
       <IconButton
         aria-label="resume"
         target="_blank"
-        href="https://drive.google.com/file/d/118PxKcI_tQpmYpg5-2EA4L-FRwgL6lfA/view?usp=sharing"
+        href="https://drive.google.com/file/d/1lIGuy2oDU9GjFzE4rtruDpxMBbk1QQcQ/view?usp=sharing"
         color="secondary"
       >
         <DescriptionIcon fontSize="large" />
