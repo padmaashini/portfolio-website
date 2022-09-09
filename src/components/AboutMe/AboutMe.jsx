@@ -28,8 +28,9 @@ function AboutMe() {
           as a software engineer!
           <br />
           <br />
-          I love being in nature and going on walks and hikes! I also love to read, feel free to connect and
-          drop some recommendations :)
+          I love travelling, being in the nature, and going on walks and hikes!
+          Here are some cool nature photos I took! :)
+          <br />
           <br />
           <br />
           <b>Currently seeking internship opportunities for the Winter and Summer terms of 2023!</b>

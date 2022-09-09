@@ -8,7 +8,12 @@ import {
   StyledImage,
 } from './ImageSlider.styles';
 
-const IMAGES = ['/image-slider-1.jpg', '/image-slider-2.jpeg', '/image-slider-3.jpg', '/image-slider-4.jpg', '/image-slider-5.jpg'];
+const IMAGES = [
+  '/image-slider/image-slider-1.jpg',
+  '/image-slider/image-slider-2.jpg',
+  '/image-slider/image-slider-3.jpg',
+  '/image-slider/image-slider-4.jpg',
+  '/image-slider/image-slider-5.jpg'];
 
 function ImageSlider() {
   const [sliderIndex, setSliderIndex] = useState(1);
