@@ -34,7 +34,7 @@ function IconLinks() {
         <DescriptionIcon fontSize="large" />
       </IconButton>
       <IconButton
-        aria-label="resume"
+        aria-label="github"
         target="_blank"
         href="https://github.com/padmaashini"
         color="secondary"

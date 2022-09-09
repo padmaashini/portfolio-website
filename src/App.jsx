@@ -7,6 +7,7 @@ import Introduction from './components/Introduction/Introduction';
 import AboutMe from './components/AboutMe/AboutMe';
 import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 import theme from './theme';
 
@@ -22,6 +23,7 @@ function App() {
         <AboutMe />
         <Experience />
         <Projects />
+        <Contact />
       </StyledApp>
     </ThemeProvider>
   );
