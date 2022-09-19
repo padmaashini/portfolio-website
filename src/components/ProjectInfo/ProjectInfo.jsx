@@ -35,7 +35,7 @@ function ProjectInfo({
 
 ProjectInfo.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.node.isRequired,
   imgSrc: PropTypes.string.isRequired,
   links: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number,

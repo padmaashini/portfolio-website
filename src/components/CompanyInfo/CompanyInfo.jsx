@@ -33,7 +33,7 @@ function CompanyInfo({ company }) {
         <Location>{location}</Location>
         <UnOrderedList>
           {points.map((point) => (
-            <Point key={point.substring(0, 10).replace(/\s+/g, '')}>
+            <Point key={[point.substring(0, 10).replace(/\s+/g, ''), point.slice(-5)].join('')}>
               {point}
             </Point>
           ))}

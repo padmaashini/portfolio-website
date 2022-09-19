@@ -64,6 +64,39 @@ const data = [
   },
   {
     id: 2,
+    title: 'The Institute of Film Awards',
+    imgSrc: '/institute-film-awards.png',
+    description:
+  <>
+    The Institute of Film Awards is a webpage where users can search for
+    movies and nominate them. Users can nominate for a maximum of 5 movies,
+    adding and removing from their nominations list. They can view their
+    nominations in the /nominations page, where they can also remove nominations.
+    Nominations are persisted across navigations but reset on hard page refresh.
+    {' '}
+    <br />
+    <br />
+    The films are fetched using OMDB API (https://www.omdbapi.com/). This application
+    was build using Next.js (React framework), with libraries such as Material UI,
+    Redux Persist, and Reselect.
+  </>,
+    skillsList: ['Next.js', 'React', 'Redux', 'Redux Persist', 'Reselect', 'HTML', 'CSS', 'JSX'],
+    links: [
+      {
+        id: 0,
+        type: 'DEPLOYMENT',
+        label: 'Deployed on Heroku!',
+        href: 'https://institute-film-awards.herokuapp.com/',
+      },
+      {
+        id: 1,
+        type: 'GITHUB',
+        href: 'https://github.com/padmaashini/institute-film-awards',
+      },
+    ],
+  },
+  {
+    id: 3,
     title: 'GroceryCart',
     imgSrc: '/grocerycart.png',
     description:
@@ -82,7 +115,7 @@ const data = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Skin Lesion Classifier',
     imgSrc: '/skin-lesion-classifier.jpg',
     description:
@@ -113,7 +146,7 @@ const data = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Project Pink',
     imgSrc: '/project-pink.png',
     description:

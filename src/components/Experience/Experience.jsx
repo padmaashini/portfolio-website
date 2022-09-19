@@ -12,7 +12,7 @@ function Experience() {
   return (
     <ExperienceContainer>
       <Title>Experience</Title>
-      {data.map((company) => <CompanyInfo key={company.name} company={company} />)}
+      {data.map((company) => <CompanyInfo key={company.key} company={company} />)}
     </ExperienceContainer>
   );
 }

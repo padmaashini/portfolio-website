@@ -1,5 +1,6 @@
 const data = [
   {
+    key: 0,
     position: 'Software Engineer',
     name: 'Canvass AI',
     image: '/canvass-logo.png',
@@ -12,6 +13,7 @@ const data = [
     ],
   },
   {
+    key: 1,
     position: 'Software Engineer',
     name: 'MedMe Health',
     image: '/medme-logo.png',
@@ -24,6 +26,7 @@ const data = [
     ],
   },
   {
+    key: 2,
     position: 'Full Stack Developer',
     name: 'Remitbee',
     image: '/remitbee-logo.jpeg',
@@ -36,6 +39,7 @@ const data = [
     ],
   },
   {
+    key: 3,
     position: 'Full Stack Developer, Part-time',
     name: 'University of Waterloo',
     image: '/uw-logo.jpg',
@@ -46,6 +50,7 @@ const data = [
     ],
   },
   {
+    key: 4,
     position: 'UX/UI Designer and Developer',
     name: 'Remitbee',
     image: '/remitbee-logo.jpeg',
