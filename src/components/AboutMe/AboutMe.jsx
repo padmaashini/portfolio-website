@@ -20,11 +20,11 @@ function AboutMe() {
           <ImageSlider />
         </ImageContainerSmall>
         <div>
-          Hi there! My name is Padma, I am a third year engineering student at the University of Waterloo.
+          Hi there! My name is Padma, I am a final year engineering student at the University of Waterloo.
           I am majoring in Biomedical Engineering with an option in Software Engineering. I have done various
-          co-ops as a software engineer, in the fintech, medical technology, and AI industry. I love problem
+          internships as a Software Engineer, including in the fintech, medical technology, data engineering, and AI industry. I love problem
           solving and building products, specifically in the software industry. I have grown a passion for
-          development through my internships and school courses, and planning on pursuing a full time career
+          development through my internships and school courses, and am pursuing a full time career
           as a software engineer!
           <br />
           <br />
@@ -33,7 +33,7 @@ function AboutMe() {
           <br />
           <br />
           <br />
-          <b>Currently seeking internship opportunities for the Winter and Summer terms of 2023!</b>
+          <b>Currently seeking full time, new grad opportunities for 2024!</b>
         </div>
       </InfoContainer>
       <ImageContainerLarge>

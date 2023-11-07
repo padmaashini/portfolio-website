@@ -20,7 +20,7 @@ function IconLinks() {
       </IconButton>
       <IconButton
         aria-label="email"
-        href="mailto:p5sukuma@uwaterloo.ca"
+        href="mailto:padmaashini.s@gmail.com"
         color="secondary"
       >
         <EmailIcon fontSize="large" />
@@ -28,7 +28,7 @@ function IconLinks() {
       <IconButton
         aria-label="resume"
         target="_blank"
-        href="https://drive.google.com/file/d/1lIGuy2oDU9GjFzE4rtruDpxMBbk1QQcQ/view?usp=sharing"
+        href="https://drive.google.com/file/d/1fkOg996w9_JaMStrjoDCd59z0hr200vf/view?usp=sharing"
         color="secondary"
       >
         <DescriptionIcon fontSize="large" />

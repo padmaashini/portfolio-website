@@ -1,7 +1,19 @@
 const data = [
   {
     key: 0,
-    position: 'Software Engineer',
+    position: 'Software Engineer, Intern',
+    name: 'Census',
+    image: '/census-logo.png',
+    location: 'San Francisco, California',
+    points: [
+      'Developed new feature to trigger reverse ETL syncs in Census after events successfully completed in Fivetran, using Ruby on Rails, webhooks, PostgreSQL, and Vue.js, and helped improve external partnerships ',
+      'Implemented Bitbucket support to enable customers to import in their repositories for integration with dbt Core and Git-backed Census configurations ',
+      'Developed a history page displaying user actions that happened through the UI or Git (for Git-backed resources), using Vue.js, TypeScript, Pug template, and Buefy, boosting audit efficiencies for over 70 organizations ',
+    ],
+  },
+  {
+    key: 1,
+    position: 'Software Engineer, Intern',
     name: 'Canvass AI',
     image: '/canvass-logo.png',
     location: 'Toronto, Ontario',
@@ -13,8 +25,8 @@ const data = [
     ],
   },
   {
-    key: 1,
-    position: 'Software Engineer',
+    key: 2,
+    position: 'Software Engineer, Intern',
     name: 'MedMe Health',
     image: '/medme-logo.png',
     location: 'Toronto, Ontario',
@@ -26,8 +38,8 @@ const data = [
     ],
   },
   {
-    key: 2,
-    position: 'Full Stack Developer',
+    key: 3,
+    position: 'Full Stack Developer, Intern',
     name: 'Remitbee',
     image: '/remitbee-logo.jpeg',
     location: 'Mississauga, Ontario',
@@ -39,8 +51,8 @@ const data = [
     ],
   },
   {
-    key: 3,
-    position: 'Full Stack Developer, Part-time',
+    key: 4,
+    position: 'Full Stack Developer, Intern (Part-time)',
     name: 'University of Waterloo',
     image: '/uw-logo.jpg',
     location: 'Waterloo, Ontario',
@@ -50,8 +62,8 @@ const data = [
     ],
   },
   {
-    key: 4,
-    position: 'UX/UI Designer and Developer',
+    key: 5,
+    position: 'UX/UI Designer and Developer, Intern',
     name: 'Remitbee',
     image: '/remitbee-logo.jpeg',
     location: 'Mississauga, Ontario',
