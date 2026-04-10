@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components';
-import { ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
 
 import Introduction from './components/Introduction/Introduction';
 import AboutMe from './components/AboutMe/AboutMe';
