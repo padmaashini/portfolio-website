@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import styled from 'styled-components';
-import { ThemeProvider } from '@mui/material/styles';
+import styled, { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
 
 import Introduction from './components/Introduction/Introduction';
 import AboutMe from './components/AboutMe/AboutMe';
@@ -17,15 +17,19 @@ const StyledApp = styled.div`
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <StyledApp className="App">
-        <Introduction />
-        <AboutMe />
-        <Experience />
-        <Projects />
-        <Contact />
-      </StyledApp>
-    </ThemeProvider>
+    <MuiThemeProvider theme={theme}>
+      <StyledThemeProvider theme={theme}>
+        <StyledApp className="App">
+          <Introduction />
+          <AboutMe />
+          {/* removing experience for now since it can be found in resume */}
+          {/* keeping in code for now */}
+          {/* <Experience /> */}
+          <Projects />
+          <Contact />
+        </StyledApp>
+      </StyledThemeProvider>
+    </MuiThemeProvider>
   );
 }
 
