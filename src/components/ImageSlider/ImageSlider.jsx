@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
-
 import {
   ImageSliderContainer,
+  SliderControls,
+  SliderStepButton,
   StyledImage,
 } from './ImageSlider.styles';
 
@@ -18,34 +17,32 @@ const IMAGES = [
 function ImageSlider() {
   const [sliderIndex, setSliderIndex] = useState(1);
 
-  // eslint-disable-next-line max-len
-  const incrementSliderIndex = () => setSliderIndex((prevIndex) => (prevIndex === IMAGES.length ? 1 : prevIndex + 1));
-
   useEffect(() => {
     const interval = setInterval(() => {
-      incrementSliderIndex();
+      setSliderIndex((prevIndex) => (prevIndex === IMAGES.length ? 1 : prevIndex + 1));
     }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
-  const handleSliderIndexChange = (event, newValue) => setSliderIndex(newValue);
-
   return (
     <ImageSliderContainer>
       <StyledImage src={IMAGES[sliderIndex - 1]} />
-      <Box sx={{ width: 300 }}>
-        <Slider
-          aria-label="image-slider"
-          valueLabelDisplay="auto"
-          value={sliderIndex}
-          onChange={handleSliderIndexChange}
-          step={1}
-          marks
-          min={1}
-          max={5}
-        />
-      </Box>
+      <SliderControls>
+        {IMAGES.map((image, index) => {
+          const stepNumber = index + 1;
+          const isActive = sliderIndex === stepNumber;
+
+          return (
+            <SliderStepButton
+              key={image}
+              type="button"
+              $isActive={isActive}
+              onClick={() => setSliderIndex(stepNumber)}
+            />
+          );
+        })}
+      </SliderControls>
     </ImageSliderContainer>
   );
 }
